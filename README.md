@@ -4,6 +4,12 @@
 
 Detta projekt innehåller tester för bokapplikationen Läslistan. Projektet använder pytest för unit- och integrationstester samt Behave och Playwright för BDD-tester av användargränssnittet.
 
+Webbapplikationen som testas finns på:
+
+https://tap-vt26-testautomatisering.github.io/exam/
+
+Detta projekt innehåller testkod för webbapplikationen. Applikationen körs separat, medan testerna körs lokalt eller automatiskt via GitHub Actions.
+
 ## Tekniker
 
 - Python

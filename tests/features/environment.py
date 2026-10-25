@@ -6,6 +6,7 @@ def before_all(context):
 
 def before_scenario(context, scenario):
     context.page = context.browser.new_page()
+    context.base_url = "https://tap-vt26-testautomatisering.github.io/exam/"
 
 def after_scenario(context, scenario):
     context.page.close()

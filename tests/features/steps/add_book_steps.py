@@ -4,7 +4,7 @@ from playwright.sync_api import expect
 
 @given('att användaren navigerar till "Lägg till bok"')
 def step_navigate_to_add_book(context):
-    context.page.goto("https://tap-vt26-testautomatisering.github.io/exam/")
+    context.page.goto(context.base_url)
     context.page.get_by_role("button", name="Lägg till bok").click()
 
 

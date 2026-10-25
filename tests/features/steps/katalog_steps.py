@@ -4,7 +4,7 @@ from playwright.sync_api import expect
 
 @given('att användaren navigerar till katalogen')
 def step_navigate_to_catalog(context):
-    context.page.goto("https://tap-vt26-testautomatisering.github.io/exam/")
+    context.page.goto(context.base_url)
 
 
 @then("ska böckerna visas i katalogen")
@@ -33,7 +33,7 @@ def step_verify_book_is_favorite(context):
 
 @given('att användaren har favoritmarkerat en bok i katalogen')
 def step_setup_favorite_book(context):
-    context.page.goto("https://tap-vt26-testautomatisering.github.io/exam/")
+    context.page.goto(context.base_url)
     first_star = context.page.get_by_test_id(
         "star-Ormar på ett plan: En Python-berättelse"
     )
